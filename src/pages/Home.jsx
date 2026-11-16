@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import heroImage from "../assets/bairo-hero.png";
 
-const Home = () => {
+const Hero = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <section
+      className="hero"
+      style={{ backgroundImage: `url(${heroImage})` }}
+    >
+      <div className="hero-overlay"></div>
+    </section>
+  );
+};
 
-export default Home
+export default Hero;

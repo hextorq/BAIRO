@@ -1,6 +1,6 @@
-
+/* navbaaaaar */
 .navbar-bairo {
-  background-color: #6A863D;
+  background-color: #6a863d;
 }
 
 .navbar-bairo .navbar-brand,
@@ -19,34 +19,135 @@
 }
 
 
-
-
-
-
 .footer {
-  background-color: #6A863D;
-  color: #fff;
+  background-color: #6a863d;
+}
+
+
+
+
+
+
+
+
+.announcement-bar {
   width: 100%;
-  padding: 25px 20px;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  text-align: center;
-}
-
-.footer-container a {
+  height: 30px;
+  padding: 0 35px;
+  background: #080003;
   color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-  transition: opacity 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+  user-select: none;
 }
 
-.footer-container a:hover {
-  opacity: 0.75;
+.announcement-content {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-text {
+  display: block;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  animation: announcementFade 0.5s ease;
+}
+
+.ticker-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: color 0.3s ease, background 0.3s ease;
+  border-radius: 4px;
+}
+
+.ticker-nav-btn:hover {
+  color: #c6a15b;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ticker-nav-btn:focus-visible {
+  outline: 2px solid #c6a15b;
+  outline-offset: 2px;
+}
+
+.ticker-nav-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ticker-prev {
+  left: 5px;
+}
+
+.ticker-next {
+  right: 5px;
+}
+
+@keyframes announcementFade {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-bar {
+    height: 27px;
+    padding: 0 30px;
+  }
+
+  .announcement-text {
+    font-size: 11px;
+    letter-spacing: 0.2px;
+  }
+
+  .ticker-nav-btn {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-text {
+    animation: none;
+  }
+
+  .ticker-nav-btn {
+    transition: none;
+  }
 }

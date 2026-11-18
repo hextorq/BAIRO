@@ -8,7 +8,8 @@ import hero3 from "../assets/BAIRO_hero/hero-3.png";
 import hero4 from "../assets/BAIRO_hero/hero-4.png";
 import topsellingbg from "../assets/BAIRO_hero/topsellingbg.png";
 import Cards from "../components/Cards";
-import Catcard from "../components/Catcard";
+
+import Catcard from "../components/category";
 
 const slides = [hero5, hero1, hero2, hero6, hero7, hero3, hero4];
 
@@ -23,6 +24,7 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+
   return (
     <>
       <section className="hero">
@@ -32,36 +34,15 @@ const Hero = () => {
           className="hero-image"
         />
       </section>
-      <section
-        className="top-selling"
-        style={{ backgroundImage: `url(${topsellingbg})` }}
-      >
-        <div className="top-selling-inner">
-          <h3 className="top-selling-title">Top Selling</h3>
-          <div className="cards">
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-          </div>
-        </div>
-      </section>
-      <section
-        className="categories"
-        style={{ backgroundImage: `url(${topsellingbg})` }}
-      >
-        <div className="categories-inner">
-          <h3 className="categories-title">Shop by Category</h3>
-          <div className="cat-grid">
-            <Catcard />
-            <Catcard />
-            <Catcard />
-            <Catcard />
-          </div>
-        </div>
-      </section>
+
+  <section>
+    <Cards />
+  </section>
+
+  <section>
+    <Catcard />
+  </section>
+
       <section
         className="feedback"
         style={{ backgroundImage: `url(${topsellingbg})` }}

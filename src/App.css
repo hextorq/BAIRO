@@ -1,3 +1,7 @@
+body {
+  background-color: #efe3d0;
+}
+
 /* navbaaaaar */
 .navbar-bairo {
   background-color: #6a863d;
@@ -30,9 +34,6 @@
   min-height: 0;
   overflow: hidden;
   width: 100%;
-  height: 100vh;
-  min-height: 600px;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,8 +50,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 75vh;
-    min-height: 500px;
+    height: auto;
+    min-height: 0;
     background-position: 60% center;
   }
 }
@@ -215,7 +216,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* fixed: single parentheses */
+  grid-template-columns: repeat(4, 1fr); /* fixed: single parentheses */
   gap: 12px;
   max-width: none;
   margin: 0;
@@ -286,6 +287,11 @@
   max-width: 80%;
   margin: 0 auto;
   padding: 40px 20px;
+  
+}
+
+.top-selling-inner {
+  padding-top: 20;
 }
 
 .top-selling-title,
@@ -333,8 +339,8 @@
   background: #efe3d0;
   border-radius: 16px;
   overflow: hidden;
+  
 }
-
 .cat-card-img {
   width: 100%;
   height: 100%;

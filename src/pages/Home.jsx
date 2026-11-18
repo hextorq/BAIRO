@@ -8,6 +8,7 @@ import hero3 from "../assets/BAIRO_hero/hero-3.png";
 import hero4 from "../assets/BAIRO_hero/hero-4.png";
 import topsellingbg from "../assets/BAIRO_hero/topsellingbg.png";
 import Cards from "../components/Cards";
+import Catcard from "../components/Catcard";
 
 const slides = [hero5, hero1, hero2, hero6, hero7, hero3, hero4];
 
@@ -44,6 +45,17 @@ const Hero = () => {
             <Cards />
             <Cards />
             <Cards />
+          </div>
+        </div>
+      </section>
+      <section className="categories" style={{ backgroundImage: `url(${topsellingbg})`}}>
+        <div className="categories-inner">
+          <h3 className="categories-title">Shop by Category</h3>
+          <div className="cat-grid">
+            <Catcard />
+            <Catcard />
+            <Catcard />
+            <Catcard />
           </div>
         </div>
       </section>

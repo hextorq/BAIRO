@@ -48,7 +48,10 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className="categories" style={{ backgroundImage: `url(${topsellingbg})`}}>
+      <section
+        className="categories"
+        style={{ backgroundImage: `url(${topsellingbg})` }}
+      >
         <div className="categories-inner">
           <h3 className="categories-title">Shop by Category</h3>
           <div className="cat-grid">
@@ -56,6 +59,68 @@ const Hero = () => {
             <Catcard />
             <Catcard />
             <Catcard />
+          </div>
+        </div>
+      </section>
+      <section
+        className="feedback"
+        style={{ backgroundImage: `url(${topsellingbg})` }}
+      >
+        <h3 className="feedback-title">Customer Feedback</h3>
+        <div className="video-box">
+          <iframe
+            src="https://www.youtube.com/embed/OV2d3EilpPw"
+            title="Customer feedback"
+            allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </section>
+      <section
+        className="ratings"
+        style={{ backgroundImage: `url(${topsellingbg})` }}
+      >
+        <h3 className="ratings-title">Ratings & Reviews</h3>
+
+        <div className="review-grid">
+          <div className="review-card">
+            <div className="review-left">
+              <div className="review-avatar">B</div>
+              <div className="stars">
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+              </div>
+            </div>
+            <div className="review-body">
+              <p className="review-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry...
+              </p>
+              <span className="review-name">bajhbfhabfv</span>
+            </div>
+          </div>
+
+          <div className="review-card">
+            <div className="review-left">
+              <div className="review-avatar">B</div>
+              <div className="stars">
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+              </div>
+            </div>
+            <div className="review-body">
+              <p className="review-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry...
+              </p>
+              <span className="review-name">bajhbfhabfv</span>
+            </div>
           </div>
         </div>
       </section>

@@ -10,7 +10,7 @@ if (GA_ID) {
   const script = document.createElement("script");
 
   script.async = true;
-  script.src = https://www.googletagmanager.com/gtag/js?id=${GA_ID};
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
 
   document.head.appendChild(script);
 
